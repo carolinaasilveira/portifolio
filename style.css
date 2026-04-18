@@ -1,0 +1,39 @@
+:root{
+    /* cores que serão utilizadas no site */
+
+    /* fundo do site */
+    --principal: #000000;
+
+    /* cor do texto */
+    --corContraste: #ffffff;
+
+    /* elementos de destaque */
+    --secundária: #00478D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--principal);
+    color: var(--corContraste);
+}
+.topo{
+
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+.profPic{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: var(--corContraste);
+    border-radius: 50%;
+    margin-top: 20px;
+}
