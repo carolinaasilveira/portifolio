@@ -8,7 +8,7 @@
   --corContraste: #ffffff;
 
   /* elementos de destaque */
-  --secundária: #00478d;
+  --secundária: #d0ca21;
 }
 
 * {
@@ -20,7 +20,8 @@ body {
   background-color: var(--principal);
   color: var(--corContraste);
 }
-.topo {
+.topo>h1>span{ /*ainda estou planejando o que fazer aqui */
+  color: var(--secundária);
 }
 .container1 {
   display: flex;
@@ -68,9 +69,9 @@ body {
     font-size: 1.5rem;
 
 }
-.ttlProjetos{
+.ttlProj{
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
     margin-top: 50px;
 }
 .cardsProjetos{
@@ -84,4 +85,20 @@ body {
     flex: 1;
     border: solid 2px var(--corContraste);
     border-radius: 10px;
+}
+.cardProjeto h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.cardProjeto a{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: var(--secundária);
+    text-decoration: none;
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
