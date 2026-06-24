@@ -49,10 +49,6 @@ body {
   margin-top: 20px;
 }
 .profPic{
-  width: 200px;
-  height: 200px;
-  background-color: var(--corContraste);
-  border-radius: 50%;
   display: grid;
   /* place-items: center; */
 }
