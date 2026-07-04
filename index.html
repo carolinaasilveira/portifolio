@@ -11,8 +11,12 @@
   <body>
     <header class="topo">
       <h1>Meu <span>Portfólio</span></h1>
-      <hr />
+      <div class="inicioEProjetos">
+        <h1>Início</h1>
+        <a href="#projetos" id="btnProjetos" class="nav-link">Projetos</a>
+      </div>
     </header>
+    <hr />
     <!-- por enquanto deixarei nesse modelo, mas posso mudar depois -->
     <section class="perfil" id="idPerfil">
       <div class="container1">
@@ -20,11 +24,11 @@
           <h1>CAROLINA SILVEIRA</h1>
           <p>Dev Fullstack | Soluções Tecnológicas</p>
           <p class="descricao">Olá! Meu nome é Carolina, sou desenvolvedora fullstack, 
-          apaixonada por tecnologia e inovação.</p>
+          apaixonada por tecnologia e inovação. Utilizo tecnologias fullstack para desenvolver aplicações web e criar soluções.</p>
           <p><i class="fab fa-linkedin"></i> linkedin</p>
         </div>
         <div class="profPic">
-          <img src="" alt="foto de perfil" />
+          <img src="animPC.gif" alt="foto de perfil" />
         </div>
       </div>
       <div class="stacks">
@@ -36,10 +40,11 @@
       </div>
       <hr/>
     </section>
+    </div>
     <div class="ttlProj">
       <h1>PROJETOS</h1>
     </div>
-    <section class="cardsProjetos">
+    <section class="cardsProjetos" id="projetos">
       <div class="cardProjeto">
         <h2>CRUD com PHP e MySQL</h2>
         <img src="stackphoto.jpg" alt="Imagem do projeto 1" />
@@ -71,7 +76,8 @@
     <footer class="rodape">
       <div>
         <hr>
-        <p>&copy; 2026 Carolina Silveira. Todos os direitos reservados.</p>
+        <p class="rodIcons">linkedin icon</p>
+        <p class="rodIcons">github icon</p>
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>

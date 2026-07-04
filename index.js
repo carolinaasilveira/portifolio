@@ -1,7 +1,18 @@
-// evento que ocorre utilizando o scroll como trigger, 
-// para que as animações ocorram quando o usuário rolar a 
-// página até determinado ponto
+// Evento de clique para rolar até a seção de projetos
 document.addEventListener('DOMContentLoaded', () => {
+  const linkProjetos = document.getElementById('btnProjetos');
+  const secaoProjetos = document.getElementById('projetos');
+
+  if (linkProjetos && secaoProjetos) {
+    linkProjetos.addEventListener('click', (event) => {
+      event.preventDefault();
+      secaoProjetos.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  // evento que ocorre utilizando o scroll como trigger,
+  // para que as animações ocorram quando o usuário rolar a
+  // página até determinado ponto
   if (typeof gsap === 'undefined') return;
 
   if (gsap.registerPlugin && window.ScrollTrigger) {
@@ -78,12 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // Animação 5: Footer (fade + slide de baixo)
     gsap.from('.rodape', {
       opacity: 0,
-      y: 30,
+      y: 10,
       duration: 0.6,
       ease: 'power2.out',
+      immediateRender: false, // não aplicar estilos iniciais até a animação rodar
       scrollTrigger: {
         trigger: '.rodape',
-        start: 'top 90%'
+        start: 'top 90%',
+        toggleActions: 'play none none reverse'
       }
     });
   }
