@@ -54,18 +54,25 @@ body {
   justify-content: space-between;
   gap: 40px;
   padding: 20px;
+  text-align: center;
   font-family: quantico;
 }
 .topo h1 {
-  margin: 0;
+   margin: 0;
+
+}
+.inicioEProjetos>h1:first-child{
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
 }
 .topo>h1>span{ /*ainda estou planejando o que fazer aqui */
   margin-top: 20px;
   color: var(--secundária);
 }
 .topo>h1>span:hover{
-  transform: scale(1.05);
-  transition: transform 1.5s ease;
+  transform: scale(1.0);
+  transition: transform 0.3s ease;
   color: var(--corContraste);
 }
 .container1 {
@@ -179,4 +186,44 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+.itensRodape{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    font-family: quantico;
+}
+.fa fa-linkedin, .fa fa-github{
+    border: solid 2px var(--corContraste);
+}
+.itensRodape p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.reveal {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.from-top {
+    transform: translateY(-40px);
+}
+
+.reveal.from-left {
+    transform: translateX(-60px);
+}
+
+.reveal.from-right {
+    transform: translateX(60px);
+}
+
+.reveal.from-bottom {
+    transform: translateY(30px);
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translate(0, 0);
 }
