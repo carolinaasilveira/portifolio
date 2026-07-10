@@ -2,13 +2,13 @@
   /* cores que serão utilizadas no site */
 
   /* fundo do site */
-  --principal: #0c0c0c;
+  --principal: #131313;
 
   /* cor do texto */
   --corContraste: #ffffff;
 
   /* elementos de destaque */
-  --secundária: #00478d;
+  --secundária: #1671cc;
 }
 @font-face {
   font-family: anta;
@@ -27,7 +27,7 @@
 body {
   background-color: var(--principal);
   color: var(--corContraste);
-  /* font-family: quantico; */
+  font-family: quantico;
 }
 .inicioEProjetos {
   display: flex;
@@ -99,14 +99,15 @@ body {
   margin: 0;
 }
 .descricao {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  text-align: justify;
   margin-top: 34px !important; /* força espaçamento caso outra regra esteja sobrescrevendo */
 }
 .profPic {
   display: grid;
   /* place-items: center; */
 }
-.profPic img {
+.profPic>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -120,22 +121,19 @@ body {
   font-family: quantico;
 }
 .stacks p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border: solid 2px rgb(37, 37, 35);
-  background-color: rgba(37, 37, 35, 0.475);
   text-align: center;
   padding: 10px;
-  border: #00478d solid 1px;
-  width: 130px;
+  border-image: linear-gradient(to right, var(--secundária), var(--corContraste));
+  border-image-slice: 5;
+  width: 160px;
   height: 50px;
 }
-.stacks p:hover {
+.stacks p:hover{
   transform: scale(1.02);
   transition: transform 0.3s ease;
   color: var(--secundária);
-}
-.stacks p > i {
-  text-align: center;
 }
 .ttlProj, .ttlContato {
   text-align: center;
@@ -162,7 +160,7 @@ body {
 }
 .cardProjeto img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   padding: 20px;
   border-top-left-radius: 10px;
@@ -171,6 +169,8 @@ body {
 .cardProjeto h2 {
   text-align: center;
   margin-top: 20px;
+  font-size: 1.6rem;
+  font-family: quantico;
 }
 .cardProjeto a {
   display: flex;
@@ -196,7 +196,7 @@ body {
 }
 .cardProjeto p {
   padding: 0 20px 20px 20px;
-  text-align: center;
+  text-align: justify;
 }
 .rodape {
   display: flex;
@@ -222,7 +222,15 @@ body {
   flex-direction: column; 
   font-size: 1.2rem;
   padding: 30px;
-
+}
+.itensRodape a {
+  color: var(--corContraste);
+  text-decoration: none;
+}
+.itensRodape a:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+  color: var(--secundária);
 }
 @media screen { 
   @media (max-width: 768px) {
