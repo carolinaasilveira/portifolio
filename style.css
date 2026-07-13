@@ -96,6 +96,7 @@ body {
 .perfilWrap {
   display: flex;
   flex-direction: column;
+  width: fit-content;
   gap: 10px; /* aumentar espaço entre itens da coluna */
 }
 .container1 h1 {
@@ -108,6 +109,8 @@ body {
 .descricao {
   font-size: 1.2rem;
   text-align: justify;
+  overflow-wrap: break-word;
+  word-break: break-word;     /* Compatibilidade extra */
   margin-top: 34px !important; /* força espaçamento caso outra regra esteja sobrescrevendo */
 }
 .profPic {
@@ -115,7 +118,7 @@ body {
   /* place-items: center; */
 }
 .profPic > img {
-  width: 500px;
+  width: 400px;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
