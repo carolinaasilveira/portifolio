@@ -30,7 +30,7 @@ body {
   color: var(--corContraste);
   font-family: quantico;
 }
-.inicioEProjetos {
+/* .inicioEProjetos {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
@@ -48,22 +48,23 @@ body {
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
-}
+} */
 .topo {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 20px;
   background-color: #131313;
   font-family: quantico;
-  position: fixed;
   top: 0;
+  position: fixed;
   left: 0;
   width: 100%;
   z-index: 1000;
   border-bottom: solid 1px #ffffff;
 }
+
 .topo a {
   margin: 0;
   color: var(--corContraste);
@@ -110,7 +111,7 @@ body {
   font-size: 1.2rem;
   text-align: justify;
   overflow-wrap: break-word;
-  word-break: break-word;     /* Compatibilidade extra */
+  word-break: break-word; /* Compatibilidade extra */
   margin-top: 34px !important; /* força espaçamento caso outra regra esteja sobrescrevendo */
 }
 .profPic {
@@ -132,7 +133,7 @@ body {
   margin: 50px;
   font-family: quantico;
 }
-.stacks>p {
+.stacks > p {
   font-size: 1rem;
   border: solid 2px rgb(37, 37, 35);
   text-align: center;
@@ -271,6 +272,9 @@ body {
     }
     .container1 {
       flex-direction: column;
+      align-items: center;
+    }
+    .perfilWrap {
       align-items: center;
     }
     .stacks {
