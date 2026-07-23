@@ -150,7 +150,7 @@ body {
   height: 50px;
 }
 .stacks p:hover {
-  transform: scale(2);
+  transform: scale(1.02) !important;
   transition: transform 0.3s ease;
   color: var(--secundária);
   border-image: linear-gradient(
@@ -216,16 +216,11 @@ body {
   );
   border-image-slice: 5;
 }
-.cardProjeto a:hover {
-  transform: scale(1.02);
+.cardProjeto:hover {
+  transform: scale(1.01) !important;
   transition: transform 0.3s ease;
-  background-color: #00478d;
-  border-image: linear-gradient(
-    to right,
-    var(--corContraste),
-    var(--secundária)
-  );
-  border-image-slice: 5;
+  border-color: var(--secundária);
+  background-color: #0c0c0c69;
 }
 .cardProjeto p {
   padding: 0 20px 20px 20px;
